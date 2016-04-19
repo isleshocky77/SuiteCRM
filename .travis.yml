@@ -32,7 +32,9 @@ after_script:
 branches:
   only:
     - master
+    - hotfix
     - develop
     - /hotfix.*/
     - /feature.*/
     - /fix.*/
+    - console-installer
