@@ -21,7 +21,7 @@ before_script:
   - mysql -u root -e "GRANT ALL PRIVILEGES ON automated_tests.* TO 'automated_tests'@'localhost';"
   - composer install
 script:
-  - php tests/install.php
+  - ./bin/console -v suitecrm:install --database-name=suitecrm --database-username=travis --install-admin-username=admin --install-admin-password=admin --install-system-name="SuiteCRM Travis Build" --install-create-database --no-interaction
   - ./vendor/bin/codecept run -f unit --debug -vvv
   - cat sugarcrm.log
 
@@ -32,9 +32,7 @@ after_script:
 branches:
   only:
     - master
-    - hotfix
     - develop
     - /hotfix.*/
     - /feature.*/
     - /fix.*/
-    - console-installer
