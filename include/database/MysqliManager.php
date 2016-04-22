@@ -128,7 +128,7 @@ class MysqliManager extends MysqlManager
         static $queryMD5 = array();
 
         parent::countQuery($sql);
-        $GLOBALS['log']->info('Query:' . $sql);
+        $GLOBALS['log']->debug('Query:' . $sql);
         $this->checkConnection();
         $this->query_time = microtime(true);
         $this->lastsql = $sql;
@@ -145,7 +145,7 @@ class MysqliManager extends MysqlManager
         }
 
         $this->query_time = microtime(true) - $this->query_time;
-        $GLOBALS['log']->info('Query Execution Time:' . $this->query_time);
+        $GLOBALS['log']->debug('Query Execution Time:' . $this->query_time);
         $this->dump_slow_queries($sql);
 
         // This is some heavy duty debugging, leave commented out unless you need this:
@@ -340,7 +340,7 @@ class MysqliManager extends MysqlManager
         mysqli_set_charset($this->database, "utf8");
 
         if ($this->checkError('Could Not Connect', $dieOnError)) {
-            $GLOBALS['log']->info("connected to db");
+            $GLOBALS['log']->debug("connected to db");
         }
 
         $this->connectOptions = $configOptions;
