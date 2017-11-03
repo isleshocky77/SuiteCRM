@@ -6,6 +6,6 @@ if(!file_exists('vendor/autoload.php')) {
     echo "Composer has not been initialized! Please run 'composer update' from project root folder.\n";
     exit(1);
 }
-require_once 'vendor/autoload.php';
+require_once PROJECT_ROOT . '/vendor/autoload.php';
 $app = new SuiteCrm\Console\Application('SuiteCrm Console', '1.0');
 $app->run();
