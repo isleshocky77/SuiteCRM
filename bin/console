@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-defined("PROJECT_ROOT") || define("PROJECT_ROOT", __DIR__);
+defined("PROJECT_ROOT") || define("PROJECT_ROOT", realpath(__DIR__ . DIRECTORY_SEPARATOR . '..'));
 set_time_limit(0);
 if(!file_exists('vendor/autoload.php')) {
     echo "Composer has not been initialized! Please run 'composer update' from project root folder.\n";
