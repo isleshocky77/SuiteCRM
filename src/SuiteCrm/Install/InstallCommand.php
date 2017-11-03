@@ -21,7 +21,7 @@ use Symfony\Component\Yaml\Parser;
  */
 class InstallCommand extends Command implements CommandInterface
 {
-    const COMMAND_NAME = 'app:install';
+    const COMMAND_NAME = 'suitecrm:install';
     const COMMAND_DESCRIPTION = 'Install the SuiteCrm application';
 
     /** @var  LoggerManager */
