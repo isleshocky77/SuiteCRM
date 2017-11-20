@@ -41,7 +41,8 @@
       "SuiteCRM\\": [
         "lib/SuiteCRM/",
         "tests/SuiteCRM/"
-      ]
+      ],
+      "": "src/"
     }
   },
   "extra": {}
