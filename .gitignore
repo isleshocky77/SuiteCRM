@@ -28,7 +28,6 @@ custom/modules/Connectors/connectors/sources/ext/*/*/config.php
 *.pydevproject
 .project
 .metadata
-bin/**
 tmp/**
 tmp/**/*
 *.tmp
