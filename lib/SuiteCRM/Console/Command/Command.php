@@ -5,7 +5,7 @@
  * Time: 14.27
  */
 
-namespace SuiteCrm\Console\Command;
+namespace SuiteCRM\Console\Command;
 
 use Symfony\Component\Console\Command\Command as ConsoleCommand;
 use Symfony\Component\Console\Input\InputInterface;

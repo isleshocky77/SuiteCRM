@@ -5,7 +5,7 @@
  * Time: 14.29
  */
 
-namespace SuiteCrm\Console\Command;
+namespace SuiteCRM\Console\Command;
 
 /**
  * This interface is used to identify console commands inside the /src directory

@@ -9,5 +9,5 @@ if(!file_exists('vendor/autoload.php')) {
 }
 require_once PROJECT_ROOT . '/vendor/autoload.php';
 require_once PROJECT_ROOT . '/suitecrm_version.php';
-$app = new SuiteCrm\Console\Application('SuiteCrm Console', $suitecrm_version);
+$app = new SuiteCRM\Console\Application('SuiteCrm Console', $suitecrm_version);
 $app->run();

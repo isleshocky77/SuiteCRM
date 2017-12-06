@@ -5,7 +5,7 @@
  * Time: 14.21
  */
 
-namespace SuiteCrm\Console;
+namespace SuiteCRM\Console;
 
 use Symfony\Component\Console\Application as BaseApplication;
 use Symfony\Component\Console\Input\InputInterface;
